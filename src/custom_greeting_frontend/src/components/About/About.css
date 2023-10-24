@@ -1,0 +1,41 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+   
+  } */
+/* 
+.wraper-about{
+   width: 800px;
+   margin-left: 10%; 
+  } */
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Edu+NSW+ACT+Foundation:wght@500&family=Poppins:ital,wght@0,900;1,700&family=Silkscreen&display=swap');
+  .cus_svg{
+    background-image:url('../../acets/wavesOpacity.svg') ;
+    background-size: contain;
+  }
+.cus-sty{
+  font-family: 'Cinzel Decorative', cursive;
+}
+.cus-sty2{
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+  .custom-shape-divider-bottom-1679660871 {
+    position: relative;
+    top: 30vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679660871 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 143px;
+}
+
+.custom-shape-divider-bottom-1679660871 .shape-fill {
+    fill: #E9FFFF;
+}

@@ -1,0 +1,13 @@
+
+.fixed{
+	position: fixed;
+	left: 0;
+	height: 100%;
+}
+body{
+	background-color: rgb(255, 255, 255);
+}
+
+/* .border-view{
+	border: 2px solid red;
+} */

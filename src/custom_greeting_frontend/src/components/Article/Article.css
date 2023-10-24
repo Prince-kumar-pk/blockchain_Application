@@ -1,0 +1,85 @@
+/* Reset some default styles */
+h1,h2,p,ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up a container for the page */
+.container {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+/* Style the side navigation */
+.side-nav {
+  width: 200px;
+  /* background-color: #212121; */
+  color:black;
+  height: 100vh;
+  /* padding: 20px; */
+  
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: #d3edf7b1;
+  border-right: 2px solid rgb(3, 59, 87);
+}
+
+.selected {
+  background-color: #d3edf7b1;
+  border-right: 2px solid rgb(3, 59, 87);
+}
+
+/* Style the main content section */
+.main-content {
+  flex: 1;
+  width: 800px;
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  padding: 20px;
+}
+
+.section-container {
+  margin-bottom: 20px;
+
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .side-nav {
+    width: 100%;
+    padding: 20px;
+    order: 2;
+  }
+
+  .main-content {
+    padding: 20px;
+    order: 1;
+  }
+}

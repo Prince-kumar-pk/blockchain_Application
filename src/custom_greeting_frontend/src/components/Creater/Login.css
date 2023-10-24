@@ -1,0 +1,15 @@
+.background_cus{
+    background-image:url('../../acets/wavesOpacity.svg') ;
+    background-size: contain;
+    border: 2px solid rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+.Satisfy{
+    font-family: 'Satisfy', cursive;
+}
+.cursive{
+    font-family: 'Dancing Script', cursive;
+}

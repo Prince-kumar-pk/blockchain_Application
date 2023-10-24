@@ -1,0 +1,168 @@
+.stage-cube-cont {
+    width: 50%;
+    height: 80vh;
+    top: 0;
+    padding-top: 2%;
+    /* margin-top: 5%; */
+    margin-left: 0;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    overflow: hidden;
+    /* border:2px solid blue; */
+}
+.cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+}
+.btn{
+    /* border: 2px solid red; */
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto ;
+    background-color: #a2ccd8;
+    height: 40px;
+    text-align: center;
+}
+.btn-left{
+    width: 110px;
+    margin-left: 5px;
+    margin-right: auto ;
+    background-color: #a2ccd8;
+    height: 40px;
+    text-align: center;
+}
+.cubespinner div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgb(164 216 244 / 61%);
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 3px rgb(137 192 240);
+}
+.cubespinner .face1 {
+    transform: translateZ(100px);
+    color: #dd0031;
+}
+.cubespinner .face2 {
+    transform: rotateY(90deg) translateZ(100px);
+    color: #f06529;
+}
+.cubespinner .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    color: #28a4d9;
+}
+.cubespinner .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    color: #5ed4f4;
+}
+.cubespinner .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    color: #efd81d;
+}
+.cubespinner .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+    color: #ec4d28;
+}
+@keyframes spincube {
+    from, to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+   }
+    16% {
+        transform: rotateY(-90deg);
+   }
+    33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+   }
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+   }
+    66% {
+        transform: rotateY(-270deg) rotateX(90deg);
+   }
+    83% {
+        transform: rotateX(90deg);
+   }
+}
+
+
+.cus-bag{
+    background-image: url('https://img.freepik.com/premium-photo/pretty-indian-asian-girl-studying-laptop-computer-with-pile-books-table-white-background_466689-18430.jpg');
+    background-size:cover;
+    
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-2.5%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.anima-bounce {
+    animation: bounce 1s infinite;
+}
+
+
+/* Scroll-indicator */
+
+.scroll-indicator {
+    width: 40px;
+    height: 60px;
+    border: 2px solid skyblue;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 0px 35px -5px skyblue;
+}
+  
+.scroll-indicator::before {
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: skyblue;
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+    animation: scrollAnim 1.8s .5s infinite ease-in;
+    box-shadow: 0px 0px 35px -5px skyblue;
+}
+  
+/* Animation */ 
+@keyframes scrollAnim {
+    0% {
+      transform: translate(-50%, 0) rotateX(0);
+      opacity: 0;
+    }
+  
+    5% {
+      opacity: .5;
+    }
+  
+    15% {
+      opacity: 1;
+    }
+  
+    90%,
+    100% {
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(-50%, 30px) rotateX(30deg);
+    }
+}
